@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #002244, #003366);
+    background: linear-gradient(to right, #4979a8, #00264d);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -214,4 +214,28 @@ footer {
     nav ul li {
         margin: 1rem 0;
     }
+}
+
+.hero-btn {
+    margin-top: 3rem;
+}
+
+.hero {
+    background: url('img/2.jpg') center/cover no-repeat;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    animation: slideDown 1s ease-out;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
 }
