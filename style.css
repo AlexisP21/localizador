@@ -240,3 +240,10 @@ footer {
     max-width: 100%;
     width: auto;
 }
+
+@media (min-width: 1024px) {
+    .logo img {
+        height: 50px;
+        /* Aumenta ligeramente el tamaño del logo en pantallas grandes si es necesario */
+    }
+}
