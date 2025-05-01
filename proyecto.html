@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultora Integral</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">Consultora Integral</div>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Soluciones Financieras, Consultoría y Abogacía</h1>
+        <p>Apoyamos tu crecimiento con experiencia legal y financiera.</p>
+        <a href="#contacto" class="btn">Contáctanos</a>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <h3>Consultoría Financiera</h3>
+                <p>Optimiza tus finanzas personales y empresariales.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-briefcase fa-2x"></i>
+                <h3>Consultoría Empresarial</h3>
+                <p>Asesoramiento estratégico para potenciar tu negocio.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-gavel fa-2x"></i>
+                <h3>Servicios de Abogacía</h3>
+                <p>Defensa legal y asesoría jurídica profesional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa con más de 10 años de experiencia brindando soluciones integrales para individuos y
+            empresas. Nuestro equipo está conformado por abogados, economistas y consultores con una sólida trayectoria.
+        </p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formulario-contacto">
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+            <input type="email" name="email" placeholder="Tu email" required />
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensaje-enviado" class="oculto">¡Gracias por contactarnos!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Consultora Integral. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

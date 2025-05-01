@@ -1,31 +1,30 @@
-function actualizarHoraYFecha() {
-    const ahora = new Date();
-    const hora = ahora.toLocaleTimeString();
-    const fecha = ahora.toLocaleDateString();
+// Mostrar mensaje de envío
+document.getElementById('formulario-contacto').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('mensaje-enviado').classList.remove('oculto');
+    this.reset();
+});
 
-    document.getElementById('hora').textContent = hora;
-    document.getElementById('fecha').textContent = fecha;
-}
+// Animaciones al hacer scroll
+const secciones = document.querySelectorAll("section");
 
-// Obtener ubicación geográfica del navegador
-function obtenerUbicacion() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-            position => {
-                const lat = position.coords.latitude.toFixed(4);
-                const lon = position.coords.longitude.toFixed(4);
-                document.getElementById('ubicacion').textContent = `${lat}, ${lon}`;
-            },
-            error => {
-                document.getElementById('ubicacion').textContent = 'No se pudo obtener la ubicación.';
-            }
-        );
-    } else {
-        document.getElementById('ubicacion').textContent = 'Geolocalización no soportada.';
+const mostrarElemento = (entry) => {
+    if (entry.isIntersecting) {
+        entry.target.style.animation = "fadeInUp 1s ease forwards";
     }
-}
+};
 
-// Inicializar
-actualizarHoraYFecha();
-setInterval(actualizarHoraYFecha, 1000);
-obtenerUbicacion();
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(mostrarElemento);
+}, {
+    threshold: 0.2,
+});
+
+secciones.forEach(sec => {
+    observer.observe(sec);
+});
+
+// Menú hamburguesa toggle
+document.getElementById('menu-icon').addEventListener('click', function () {
+    document.getElementById('nav-links').classList.toggle('show');
+});
