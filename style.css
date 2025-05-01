@@ -247,3 +247,43 @@ footer {
         /* Aumenta ligeramente el tamaño del logo en pantallas grandes si es necesario */
     }
 }
+
+.cuadros-mv {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.cuadro {
+    background-color: white;
+    border-left: 5px solid #003366;
+    padding: 1.5rem;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: aparecer 1s forwards;
+}
+
+.cuadro:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.cuadro:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.icono-mv {
+    color: #003366;
+    margin-bottom: 1rem;
+}
