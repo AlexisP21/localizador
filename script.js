@@ -10,7 +10,7 @@ const secciones = document.querySelectorAll("section");
 
 const mostrarElemento = (entry) => {
     if (entry.isIntersecting) {
-        entry.target.style.animation = "fadeInUp 1s ease forwards";
+        entry.target.classList.add("animado");
     }
 };
 
