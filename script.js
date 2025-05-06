@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const frases = {
         "persona1.webp": "Líder de proyectos, organizando ideas y resultados.",
-        "persona2.jpeg": "Diseñadora UX, haciendo que todo sea visualmente increíble.",
+        "persona2.jpeg": "Diseñador UX, haciendo que todo sea visualmente increíble.",
         "persona3.jpg": "Desarrollador web, construyendo soluciones digitales."
     };
 
