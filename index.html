@@ -2,11 +2,13 @@
 <html lang="es">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consultora Integral</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -102,16 +104,22 @@
                 <img src="img/persona1.webp" alt="Miembro 1">
                 <h3>Juan Pérez</h3>
                 <p>Abogado Senior</p>
+
+
             </div>
             <div class="miembro-equipo">
                 <img src="img/persona2.jpeg" alt="Miembro 2">
                 <h3>María González</h3>
                 <p>Consultora Financiera</p>
+
+
             </div>
             <div class="miembro-equipo">
                 <img src="img/persona3.jpg" alt="Miembro 3">
                 <h3>Carlos Rodríguez</h3>
                 <p>Especialista Empresarial</p>
+
+
             </div>
         </div>
     </section>
@@ -138,6 +146,17 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Modal -->
+    <div id="modal-miembro" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <img id="modal-imagen" src="" alt="Foto ampliada">
+            <p id="modal-frase"></p>
+        </div>
+    </div>
+
 </body>
 
 </html>
