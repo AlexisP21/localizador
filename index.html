@@ -104,29 +104,23 @@
                 <img src="img/persona1.webp" alt="Miembro 1">
                 <h3>Juan Pérez</h3>
                 <p>Abogado Senior</p>
-
-
             </div>
             <div class="miembro-equipo">
                 <img src="img/persona2.jpeg" alt="Miembro 2">
                 <h3>Carlos Rodríguez</h3>
                 <p>Consultor Financiero</p>
-
-
             </div>
             <div class="miembro-equipo">
                 <img src="img/persona3.jpg" alt="Miembro 3">
                 <h3>María González</h3>
                 <p>Especialista Empresarial</p>
-
-
             </div>
         </div>
     </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <form id="formulario-contacto">
+        <form action="enviar.php" method="POST" >
             <label for="nombre" class="sr-only">Nombre</label>
             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
 
@@ -134,7 +128,7 @@
             <input type="email" id="email" name="email" placeholder="Tu email" required />
 
             <label for="mensaje" class="sr-only">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <textarea type="text" id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
 
             <button type="submit">Enviar</button>
         </form>
@@ -145,7 +139,6 @@
         <p>&copy; 2025 Alexis Pantoja. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
     <script src="script.js"></script>
 
     <!-- Modal -->
